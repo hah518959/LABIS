@@ -11,52 +11,6 @@ body {
     width: 100%;
 }
 
-@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');
-    font-weight: 100;
-    font-display: swap;
-}@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2') format('woff2');
-    font-weight: 200;
-    font-display: swap;
-}@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');
-    font-weight: 300;
-    font-display: swap;
-}@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-display: swap;
-}@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-display: swap;
-}@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-display: swap;
-}@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-display: swap;
-}@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-display: swap;
-}@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
-    font-weight: 900;
-    font-display: swap;}
-
 main {
     width: 100%;
     height: 945px;
@@ -111,7 +65,7 @@ main {
     transition: 0.3s;
 }
 
-.s1 {
+.aivy {
     position: absolute;
     top: 100px;
     left: 200px;
@@ -125,7 +79,7 @@ main {
     100% {transform: translateX(0px);}
 }
 
-.s2 {
+.intro {
     position: absolute;
     top: 130px;
     right: 140px;
@@ -139,7 +93,7 @@ main {
     100% {transform: translateX(2px);}
 }
 
-.s3 {
+.recruit {
     position: absolute;
     bottom: 100px;
     left: 250px;
@@ -153,7 +107,7 @@ main {
     100% {transform: translateX(3px);}
 }
 
-.s4 {
+.secury {
     position: absolute;
     bottom: 150px;
     right: 200px;
@@ -180,39 +134,10 @@ footer {
     background-color: rgb(27, 25, 32);
 }
 
-.logo_left {
-    position: absolute;
-    width: 500px;
-    height: 200px;
-    background-color: red;
-    left: -150px;
-    bottom: 150px;
-    transform: rotate(-90deg);
-    font-weight: 900;
-    font-size: 155px;
-    text-align: center;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.336);
-}
-
-.logo_right {
-    position: absolute;
-    width: 500px;
-    height: 200px;
-    background-color: red;
-    right: -150px;
-    bottom: 150px;
-    transform: rotate(90deg);
-    font-weight: 900;
-    font-size: 155px;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.336);
-}
-
 .on_border {
     position: absolute;
     transform: translate(-50%);
-    width: 50%;
+    width: 70%;
     left: 50%;
     top: 30px;
 }
@@ -272,10 +197,39 @@ footer {
     top: 200px;
 }
 
+.sns {
+    width: 40px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    left: 30%;
+    top: 230px;
+}
+
+.sns_box_off {
+    position: absolute;
+    left: 30%;
+    top: 260px;
+    width: 300px;
+    height: 70px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.sns_box_on {
+    position: absolute;
+    left: 30%;
+    top: 260px;
+    width: 300px;
+    height: 70px;
+    justify-content: space-around;
+    text-align: center;
+}
+
 .under_border {
     position: absolute;
     transform: translate(-50%);
-    width: 50%;
+    width: 70%;
     left: 50%;
     bottom: 60px;
 }
@@ -293,4 +247,13 @@ footer {
     text-align: center;
     line-height: 20px;
     color: white;
+}
+
+
+.insta_box {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 30%;
+    top: 260px;
 }
