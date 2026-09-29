@@ -1,296 +1,33 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Paperozi';
-}
-
-body {
-    background-color: #121314;
-    width: 100%;
-}
-
-@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');
-    font-weight: 100;
-    font-display: swap;
-}@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2') format('woff2');
-    font-weight: 200;
-    font-display: swap;
-}@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');
-    font-weight: 300;
-    font-display: swap;
-}@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-display: swap;
-}@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-display: swap;
-}@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-display: swap;
-}@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-display: swap;
-}@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-display: swap;
-}@font-face {
-    font-family: 'Paperozi';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
-    font-weight: 900;
-    font-display: swap;}
-
-main {
-    width: 100%;
-    height: 945px;
-    position: relative;
-    margin: 0 auto;
-}
-
-.logo {
-    font-size: 100px;
-    font-weight: 800;
-    text-decoration: none;
-    width: 400px;
-    height: 130px;
-    /* background-color: red; */
-    line-height: 130px;
-    text-align: center;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    transition: ease 0.2s;
-    color: rgb(240, 238, 255);
-}
-
-.logo.on {
-    font-size: 120px;
-}
-
-.box1 {
-    width: 400px;
-    height: 130px;
-    /* background-color: rgba(0, 255, 85, 0.212); */
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    transition: linear 0.2s;
-    opacity: 0;
-}
-
-.box1.on {
-    width: 1200px;
-    height: 500px;
-    opacity: 1;
-}
-
-.box1>a {
-    font-size: 40px;
-    font-weight: 800;
-    text-decoration: none;
-    color: rgb(209, 66, 0);
-    transition: 0.3s;
-}
-
-.s1 {
-    position: absolute;
-    top: 100px;
-    left: 200px;
-    animation: move1 6s linear infinite;
-}
-
-@keyframes move1 {
-    0% {transform: translateX(0px);}
-    25% {transform: translateX(-4px);}
-    50% {transform: translateX(4px);}
-    100% {transform: translateX(0px);}
-}
-
-.s2 {
-    position: absolute;
-    top: 130px;
-    right: 140px;
-    animation: move2 5s linear infinite;
-}
-
-@keyframes move2 {
-    0% {transform: translateX(2px);}
-    25% {transform: translateX(-6px);}
-    50% {transform: translateX(6px);}
-    100% {transform: translateX(2px);}
-}
-
-.s3 {
-    position: absolute;
-    bottom: 100px;
-    left: 250px;
-    animation: move3 4s linear infinite;
-}
-
-@keyframes move3 {
-    0% {transform: translateX(3px);}
-    25% {transform: translateX(-3px);}
-    50% {transform: translateX(0px);}
-    100% {transform: translateX(3px);}
-}
-
-.s4 {
-    position: absolute;
-    bottom: 150px;
-    right: 200px;
-    animation: move4 4s linear infinite;
-}
-
-
-@keyframes move4 {
-    0% {transform: translateX(-4px);}
-    50% {transform: translateX(4px);}
-    100% {transform: translateX(-4px);}
-}
-
-.box1>a:hover {
-    font-size: 45px;
-    color: white;
-}
-
-footer {
-    width: 100%;
-    height: 500px;
-    position: relative;
-    margin: 0 auto;
-    background-color: rgb(27, 25, 32);
-}
-
-.logo_left {
-    position: absolute;
-    width: 500px;
-    height: 200px;
-    background-color: red;
-    left: -150px;
-    bottom: 150px;
-    transform: rotate(-90deg);
-    font-weight: 900;
-    font-size: 155px;
-    text-align: center;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.336);
-}
-
-.logo_right {
-    position: absolute;
-    width: 500px;
-    height: 200px;
-    background-color: red;
-    right: -150px;
-    bottom: 150px;
-    transform: rotate(90deg);
-    font-weight: 900;
-    font-size: 155px;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.336);
-}
-
-.on_border {
-    position: absolute;
-    transform: translate(-50%);
-    width: 50%;
-    left: 50%;
-    top: 30px;
-}
-
-.number {
-    width: 280px;
-    height: 20px;
-    /* background-color: red; */
-    color: white;
-    line-height: 20px;
-    position: absolute;
-    left: 30%;
-    top: 80px;
-}
-
-.address {
-    width: 300px;
-    height: 20px;
-    /* background-color: red; */
-    color: white;
-    line-height: 20px;
-    position: absolute;
-    left: 30%;
-    top: 110px;
-}
-
-.saupza {
-    width: 280px;
-    height: 20px;
-    /* background-color: red; */
-    color: white;
-    line-height: 20px;
-    position: absolute;
-    left: 30%;
-    top: 140px;
-}
-
-.number {
-    width: 280px;
-    height: 20px;
-    /* background-color: red; */
-    color: white;
-    line-height: 20px;
-    position: absolute;
-    left: 30%;
-    top: 170px;
-}
-
-.email {
-    width: 290px;
-    height: 20px;
-    /* background-color: red; */
-    color: white;
-    line-height: 20px;
-    position: absolute;
-    left: 30%;
-    top: 200px;
-}
-
-.under_border {
-    position: absolute;
-    transform: translate(-50%);
-    width: 50%;
-    left: 50%;
-    bottom: 60px;
-}
-
-.copyright {
-    width: 400px;
-    font-size: 13px;
-    font-weight: 300;
-    height: 20px;
-    position: absolute;
-    transform: translate(-50%);
-    left: 50%;
-    bottom: 20px;
-    /* background-color: red; */
-    text-align: center;
-    line-height: 20px;
-    color: white;
-}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <meta content="width=device-width, initial-scale=1.0">
+    <title>labis</title>
+    <link rel="stylesheet" href="labis.css">
+</head>
+<body>
+    <main>
+        <p class="logo">LABIS</p>
+        <div class="box1">
+            <a href="Sub_html/aivy.html" class="s1" target="_blank">AIVY</a>
+            <a href="Sub_html/intro.html" class="s2" target="_blank">회사 소개</a>
+            <a href="Sub_html/recruit.html" class="s3" target="_blank">채용모집</a>
+            <a href="Sub_html/secury.html" class="s4" target="_blank">Secury</a>
+        </div>
+    </main>
+    <footer>
+        <a href="#" class="logo_left">LABIS</a>
+        <a href="#" class="logo_right">LABIS</a>
+        <hr class="on_border">
+        <p class="number">채용관련 문의 전화: 010-XXXX-XXXX</p>
+        <p class="address">주소: 전남광주통합특별시 북구 운암로 85번길</p>
+        <p class="saupza">사업자 번호: XXX-XX-XXXXX</p>
+        <p class="email">이메일: qwer12345678@naver.com</p>
+        <hr class="under_border">
+        <p class="copyright">Copyrightⓒ 2026. LABIS Co. All rights reserved.</p>
+    </footer>
+    <script src="labis.js"></script>
+</body>
+</html>
