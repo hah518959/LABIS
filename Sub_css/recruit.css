@@ -7,7 +7,7 @@
 header {
     width: 100%;
     height: 50px;
-    background-color:pink ;
+    background-color:#121314 ;
 }
 
 .m_header {
@@ -32,21 +32,29 @@ header {
     font-size: 30px;
     font-weight: 800;
     text-decoration: none;
-    color: #000;
+    color: #a79cbb;
     line-height: 50px;
     margin-right: 8px;
+}
+
+.logo>span {
+    transition: 0.2s;
+}
+
+.logo:hover>span {
+    color: white;
 }
 
 .content {
     width: 100%;
     height: 1000px;
-    background-color:rgb(192, 193, 255) ;
+    background-color:rgb(60, 60, 80) ;
     position: relative;
 }
 
 footer {
     width: 100%;
     height: 100px;
-    background-color:rgb(249, 255, 192) ;
+    background-color:rgb(76, 78, 56) ;
     position: relative;
 }
