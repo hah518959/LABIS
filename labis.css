@@ -186,8 +186,6 @@ nav>ul>li>a {
 }
 
 nav > ul > li > a:hover {
-    font-size: 30px;
-    font-weight: 900;
     color: orange;
 }
 
