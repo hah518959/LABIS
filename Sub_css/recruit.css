@@ -303,7 +303,8 @@ nav>ul>li>a:hover {
     top: 130px;
 }
 
-.detail {
+.detail1, .detail2, .detail3,
+.detail4, .detail5, .detail6 {
     width: 80px;
     height: 35px;
     background-color: #121314;
@@ -319,7 +320,8 @@ nav>ul>li>a:hover {
 }
 
 
-.detail:hover{
+.detail1:hover, .detail2:hover, .detail3:hover,
+.detail4:hover, .detail5:hover, .detail6:hover{
     box-shadow: 0 3px 10px rgba(75, 84, 90, 0.3);
 }
 
@@ -392,6 +394,14 @@ nav>ul>li>a:hover {
 .recruit6 {
     left: 82%;
 }
+
+.page_num {
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    bottom: 160px;
+    cursor: pointer;
+}
 /* -----------------------지원 가이드----------------------- */
 
 .resume_guide_contents {
@@ -420,6 +430,41 @@ nav>ul>li>a:hover {
     /* background-color: #447744; */
 }
 
+.my_resume_contents > span {
+    transform: translate(-50%);
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    font-size: 100px;
+    font-weight: 600;
+}
+
+.my_resume_contents > div {
+    transform: translate(-50%);
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    background-color: #121314;
+    width: 150px;
+    height: 60px;
+    line-height: 56px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 2px solid #858585;
+}
+
+.my_resume_contents > div:hover {
+    background-color: rgb(255, 255, 255);
+    color: #121314;
+    border: 2px solid #121314;
+}
+
 /* -----------------------로그인----------------------- */
 
 .login_contents {
@@ -434,9 +479,265 @@ nav>ul>li>a:hover {
     /* background-color: #447744; */
 }
 
+.login_contents > input {
+    width: 300px;
+    height: 30px;
+}
+
+.nickname, .pw {
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+}
+
+.login_contents > span {
+    position: absolute;
+    left: 42.3%;
+}
+
+.nickname {
+    border-radius: 0px;
+    border: 1px solid #121314;
+    top: 300px;
+}
+
+.s_nickname{
+    position: absolute;
+    top: 275px;
+}
+
+.pw {
+    border-radius: 0px;
+    border: 1px solid #121314;
+    top: 370px;
+}
+
+.s_pw {
+    top: 345px;
+}
+
+.under_menu {
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: 450px;
+}
+
+.detail_popup1 {
+    width: 1000px;
+    height: 900px;
+    background-color: white;
+    border: 1px solid #121314;
+    display: none;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 20;
+}
+
+.detail_popup1.on {
+    display: block;
+}
+
+.detail_popup2 {
+    width: 1000px;
+    height: 900px;
+    background-color: white;
+    border: 1px solid #121314;
+    display: none;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 20;
+}
+
+.detail_popup2.on {
+    display: block;
+}
+
+.detail_popup3 {
+    width: 1000px;
+    height: 900px;
+    background-color: white;
+    border: 1px solid #121314;
+    display: none;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 20;
+}
+
+.detail_popup3.on {
+    display: block;
+}
+
+.detail_popup4 {
+    width: 1000px;
+    height: 900px;
+    background-color: white;
+    border: 1px solid #121314;
+    display: none;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 20;
+}
+
+.detail_popup4.on {
+    display: block;
+}
+
+.detail_popup5 {
+    width: 1000px;
+    height: 900px;
+    background-color: white;
+    border: 1px solid #121314;
+    display: none;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 20;
+}
+
+.detail_popup5.on {
+    display: block;
+}
+
+.detail_popup6 {
+    width: 1000px;
+    height: 900px;
+    background-color: white;
+    border: 1px solid #121314;
+    display: none;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 20;
+}
+
+.detail_popup6.on {
+    display: block;
+}
+
+.popup_close {
+    width: 70px;
+    height: 30px;
+    border: 2px solid #121314;
+    line-height: 26px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.popup_box {
+    width: 800px;
+    height: 700px; 
+    background-color: white;
+    border: 1px solid #121314;
+    display: none;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 20;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.popup_box.on {
+    display: block;
+}
+
+.pop_top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.pop_company { color: #555; }
+.pop_title {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.pop_exp {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+.pop_content h3 {
+    font-size: 18px;
+    border-bottom: 2px solid #121314;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.pop_content ul {
+    list-style: disc;
+    padding-left: 20px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.popup_close {
+    width: 70px;
+    height: 30px;
+    border: 2px solid #121314;
+    line-height: 26px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: white;
+}
+.popup_close:hover {
+    background-color: #121314;
+    color: white;
+}
+
 footer {
     width: 100%;
     height: 100px;
-    background-color:rgb(76, 78, 56) ;
+    background-color: #121314;
     position: relative;
+}
+
+.m_footer {
+    width: 1500px;
+    height: 100px;
+    background-color: #121314;
+}
+
+.background_block_box {
+    display: none;
+    position: none;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: #4e4e4e7c;
+}
+
+.background_block_box.on {
+    position: fixed;
+    display: block;
+
 }
