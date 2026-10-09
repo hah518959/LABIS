@@ -3,12 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>s4</title>
-    <link rel="stylesheet" href="../Sub_css/intro.css">
+    <title>LABIS 소개</title>
     <link rel="stylesheet" href="../font.css">
+    <link rel="stylesheet" href="../Sub_css/intro.css">
 </head>
 <body>
-    소개
+
+    <header class="intro_hero">
+        <h1 class="hero_title">LABIS</h1>
+        <p class="hero_sub">"AI에 무게(lbs)를 둔다."</p>
+        <p class="hero_desc">
+            가벼운 일상부터 무거운 비즈니스까지,<br>
+            우리의 삶에 확실한 중심이 될 고성능 AI 솔루션을 제공합니다.
+        </p>
+        <div class="scroll_indicator">Scroll Down <span>↓</span></div>
+    </header>
+    <main class="intro_contents">
+        <section class="scroll_section">
+            <div class="text_box">
+                <h2>01. LABIS</h2>
+                <h3>가장 완성도 높은 인공지능</h3>
+                <p>
+                    최신 AI 기술과 엄격한 데이터 검증을 거칩니다.<br>
+                    실상황에 즉시 적용할 수 있으며, 누구나 안심하고 사용할 수 있는<br>
+                    단단하고 안정적인 AI 모델을 개발합니다.
+                </p>
+            </div>
+            <div class="img_box">
+                <div class="window_mockup code_editor">
+        <div class="window_header">
+            <div class="dots">
+                <div class="dot-red"></div>
+                <div class="dot-yellow"></div>
+                <div class="dot-green"></div>
+            </div>
+            <div class="window_title">labis_core_engine.py</div>
+        </div>
+        <div class="code_body">
+<pre><span class="line_number"> 1</span><span class="keyword">import</span> torch
+<span class="line_number"> 2</span><span class="keyword">from</span> labis.core.engine <span class="keyword">import</span> LBS_NeuralCore, DistributedCluster
+<span class="line_number"> 3</span><span class="keyword">from</span> labis.security <span class="keyword">import</span> DataIntegrityValidator
+<span class="line_number"> 4</span>
+<span class="line_number"> 5</span><span class="comment"># Initialize LABIS Proprietary Enterprise AI Core</span>
+<span class="line_number"> 6</span><span class="keyword">class</span> <span class="class_name">LabisEnterpriseModel</span>(LBS_NeuralCore):
+<span class="line_number"> 7</span>    <span class="keyword">def</span> <span class="func">__init__</span>(self, nodes=<span class="number">128</span>, precision=<span class="string">"INT4_QAT"</span>):
+<span class="line_number"> 8</span>        <span class="func">super</span>().<span class="func">__init__</span>(architecture=<span class="string">"LBS-Visionary-70B"</span>)
+<span class="line_number"> 9</span>        self.device = DistributedCluster.<span class="func">get_optimal_device</span>()
+<span class="line_number">10</span>        
+<span class="line_number">11</span>        <span class="func">print</span>(<span class="string">f"[*] Booting LABIS Core across {nodes} zero-trust nodes..."</span>)
+<span class="line_number">12</span>        
+<span class="line_number">13</span>        <span class="comment"># Load weights with strict data validation (LABIS Core Value)</span>
+<span class="line_number">14</span>        self.model = self.<span class="func">load_proprietary_weights</span>(
+<span class="line_number">15</span>            vault_uri=<span class="string">"lbs-vault://models/core-70b-v4"</span>,
+<span class="line_number">16</span>            verify_checksum=<span class="keyword">True</span>,
+<span class="line_number">17</span>            quantization=precision
+<span class="line_number">18</span>        )
+<span class="line_number">19</span>        self.validator = <span class="func">DataIntegrityValidator</span>(level=<span class="string">"strict"</span>)
+<span class="line_number">20</span>
+<span class="line_number">21</span>    @torch.compile
+<span class="line_number">22</span>    <span class="keyword">def</span> <span class="func">infer_stream</span>(self, data_stream):
+<span class="line_number">23</span>        <span class="comment">""" Executes multi-dimensional attention using LBS-Weights """</span>
+<span class="line_number">24</span>        validated_data = self.validator.<span class="func">verify</span>(data_stream)
+<span class="line_number">25</span>        
+<span class="line_number">26</span>        <span class="comment"># Proprietary inference engine for real-time processing</span>
+<span class="line_number">27</span>        logits = self.model.<span class="func">forward</span>(validated_data, use_flash_attn=<span class="keyword">True</span>)
+<span class="line_number">28</span>        <span class="keyword">return</span> logits
+<span class="line_number">29</span>
+<span class="line_number">30</span><span class="comment"># Deploying LABIS AI Core to production...</span>
+<span class="line_number">31</span>labis_core = <span class="func">LabisEnterpriseModel</span>()
+<span class="line_number">32</span>labis_core.<span class="func">deploy_to_production</span>()</pre>
+        </div>
+    </div>
+            </div>
+        </section>
+        <section class="scroll_section reverse">
+            <div class="text_box">
+                <h2>02. AiVY</h2>
+                <h3>패션과 AI의 완벽한 융합</h3>
+                <p>
+                    빅데이터 기반의 트렌드 태그(#가을, #힙 등) 매핑.<br>
+                    사용자의 신체 스펙과 원하는 핏을 AI가 분석하여,<br>
+                    나에게 딱 맞는 옷을 가장 저렴하게 고를 수 있도록 돕습니다.
+                </p>
+            </div>
+            <div class="img_box">
+                <div class="window_mockup aivy_chat">
+                    <div class="window_header">
+                        <div class="dots">
+                            <div class="dot-red"></div>
+                            <div class="dot-yellow"></div>
+                            <div class="dot-green"></div>
+                        </div>
+                        <div class="window_title">AiVY Style Agent</div>
+                    </div>
+                    <div class="chat_body">
+                        <div class="msg_row user">
+                            <div class="msg_bubble">이번 주말 데이트 미니멀룩 추천해 줄래? 10만 원 안팎으로!</div>
+                        </div>
+                        <div class="msg_row ai">
+                            <div class="msg_bubble">
+                                분석 완료! 🍂<br>
+                                세미 와이드 슬랙스와 크롭 비건 레더 자켓 매치. 타임 특가 적용 시 총 89,000원입니다!
+                                
+                                <div class="ai_tags">
+                                    <span>#가을</span><span>#미니멀룩</span><span>#최저가</span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="msg_bubble">
+                                <a href="#">https://example/site.com</a>
+                                </div>
+                            </div>
+                            <img src="img/fashion25.png" alt="" style="width: 200px; height: 400px; display: block;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scroll_section">
+            <div class="text_box">
+                <h2>03. Secury</h2>
+                <h3>24시간 잠들지 않는 보안</h3>
+                <p>
+                    고성능 AI가 타 회사의 보안 위협을 상시로 감시합니다.<br>
+                    기업의 보안 인력 소모는 최소화하면서도,<br>
+                    사이버 공격의 사각지대 없는 빈틈없는 안전을 구축합니다.
+                </p>
+            </div>
+            <div class="img_box">
+                <div class="window_mockup bash_terminal">
+                    <div class="window_header">
+                        <div class="dots">
+                            <div class="dot-red"></div>
+                            <div class="dot-yellow"></div>
+                            <div class="dot-green"></div>
+                        </div>
+                        <div class="window_title">root@secury-node:~</div>
+                    </div>
+                    <div class="term_body">
+                        <p><span class="prompt">root@secury</span>:<span class="path">~</span>$ ./start_daemon.sh</p>
+                        <p><span class="timestamp">[14:32:01]</span> <span class="log_info">INFO: Engine Initialized.</span></p>
+                        <p><span class="timestamp">[14:45:12]</span> <span class="log_warn">WARN: Abnormal traffic on Port 443</span></p>
+                        <p><span class="timestamp">[14:45:12]</span> <span class="log_alert">CRITICAL: Ransomware signature matched!</span></p>
+                        <p><span class="timestamp">[14:45:13]</span> <span class="log_success">SUCCESS: Threat neutralized in 0.121s.</span></p>
+                        <p><br><span class="prompt">root@secury</span>:<span class="path">~</span>$ <span class="cursor"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="intro_footer">
+        <div class="footer_content">
+            <h2 class="aspiration_title">
+                사람들이 쉽고 빠르게<br>
+                고성능 AI를 사용할 수 있는 세상
+            </h2>
+            <p class="aspiration_desc">
+                LABIS는 단순히 기술을 개발하는 것에 그치지 않습니다.<br>
+                검증된 기술력으로 일상과 산업의 혁신을 이끌며,<br>
+                당신의 내일에 확실한 <strong>'무게(lbs)'</strong>를 실어드리겠습니다.
+            </p>
+            <div class="end_logo">LABIS</div>
+        </div>
+    </footer>
+    <script src="../Sub_js/intro.js"></script>
 </body>
-<script src="../Sub_script/intro.js"></script>
 </html>
