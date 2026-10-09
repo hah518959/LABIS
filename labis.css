@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Paperozi';
+    font-family: 'Paperozi'; 
 }
 
 body {
@@ -16,6 +16,7 @@ main {
     height: 945px;
     position: relative;
     margin: 0 auto;
+    background: linear-gradient(-135deg, #121314 0%, #232325 100%) ;
 }
 
 .logo {
