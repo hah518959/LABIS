@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Paperozi';
 }
 
 header {
@@ -61,31 +62,376 @@ nav>ul {
 }
 
 nav>ul>li>a {
-    color: orangered;
-    font-size: 24px;
-    font-weight: 800;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
     text-decoration: none;
     transition: 0.2s;
 }
 
 nav>ul>li>a:hover {
-    color: orange;
+    color: #a79cbb;
 }
 
-.s_recruit.on1 {
-    color: orange;
+.s_recruit {
+    color: white;
 }
 
-.s_recruit.on2 {
-    color: green;
+.s_recruit.on {
+    color: #adadad;
 }
 
+.resume_guide {
+    color: white;
+}
+
+.resume_guide.on {
+    color: #adadad;
+}
+
+.my_resume {
+    color: white;
+}
+
+.my_resume.on {
+    color: #adadad;
+}
+
+.login {
+    color: white;
+}
+
+.login.on {
+    color: #adadad;
+}
 
 .content {
     width: 100%;
     height: 1000px;
-    background-color:rgb(60, 60, 80) ;
+    background-color: #f0f4ff;
     position: relative;
+}
+
+.recruit_contents {
+    position: relative;
+    display: none;
+    width: 1500px;
+    height: 1100px;
+    margin: 0 auto;
+}
+
+.recruit_contents.on{
+    display: block;
+    /* background-color: #447744; */
+}
+
+.sub_title {
+    width: 1500px;
+    height: 300px;
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: 700;
+    /* background-color: red; */
+    position: relative;
+}
+
+.sub_title > p {
+    line-height: 300px;
+    text-align: center;
+}
+
+.sub_title>span {
+    position: absolute;
+    font-size: 20px;
+    color: #a79cbb;
+    transform: translate(-50%);
+    left: 50%;
+    top: 180px;
+    font-weight: 500;
+}
+
+.menu {
+    position: absolute;
+    left: 7%;
+    top: 25%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.teul1 > div > div {
+    transform: translateY(-50%);
+}
+
+.teul2 > div > div {
+    transform: translateY(-50%);
+}
+
+.teul1 {
+    width: 1400px;
+    height: 300px;
+    /* background-color: rgb(204, 115, 115); */
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+}
+
+.teul1>div {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #121314; */
+    border: 2px solid #adadad;
+    transition: 0.2s;
+}
+
+.teul1>div:hover {
+    box-shadow: 0 3px 10px rgba(75, 84, 90, 0.3);
+}
+
+
+.company_name {
+    height: 25px;
+    color: #121314;
+    position: absolute;
+    text-align: center;
+    line-height: 25px;
+    top: 40px;
+    left: 50px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.left_date {
+    width: 60px;
+    height: 25px;
+    background-color: #121314;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 120px;
+}
+
+.left_date_a {
+    width: 60px;
+    height: 25px;
+    background-color: #121314;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 110px;
+}
+
+.left_date_s {
+    width: 60px;
+    height: 25px;
+    background-color: #121314;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 130px;
+}
+
+.left_date_as {
+    width: 60px;
+    height: 25px;
+    background-color: #121314;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 200px;
+}
+
+.left_date_all {
+    width: 60px;
+    height: 25px;
+    background-color: #121314;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 275px;
+}
+
+.left_date_other {
+    width: 70px;
+    height: 25px;
+    background-color: #121314;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 275px;
+}
+
+.recruit_title {
+    height: 25px;
+    color: #121314;
+    position: absolute;
+    text-align: center;
+    line-height: 25px;
+    left: 50px;
+    top: 80px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.new_old {
+    height: 25px;
+    color: #121314;
+    position: absolute;
+    text-align: center;
+    line-height: 25px;
+    left: 50px;
+    top: 130px;
+}
+
+.detail {
+    width: 80px;
+    height: 35px;
+    background-color: #121314;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 20px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+.detail:hover{
+    box-shadow: 0 3px 10px rgba(75, 84, 90, 0.3);
+}
+
+.button {
+    width: 130px;
+    height: 35px;
+    background-color: #121314;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 20px;
+    position: absolute;
+    right: 120px;
+    bottom: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+.button:hover{
+    box-shadow: 0 3px 10px rgba(75, 84, 90, 0.3);
+}
+
+.recruit1 {
+    left: 18%;
+}
+
+.recruit2 {
+    left: 50%;
+}
+
+.recruit3 {
+    left: 82%;
+}
+
+.teul2 {
+    width: 1400px;
+    height: 300px;
+    /* background-color: rgb(158, 121, 218); */
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    position: relative;
+}
+
+.teul2>div {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #121314; */
+    border: 2px solid #adadad;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.teul2>div:hover {
+    box-shadow: 0 3px 10px rgba(75, 84, 90, 0.3);
+}
+
+.recruit4 {
+    left: 18%;
+}
+
+.recruit5 {
+    left: 50%;
+}
+
+.recruit6 {
+    left: 82%;
+}
+/* -----------------------지원 가이드----------------------- */
+
+.resume_guide_contents {
+    display: none;
+}
+
+.resume_guide_contents.on{
+    display: block;
+    width: 1500px;
+    height: 1100px;
+    margin: 0 auto;
+    /* background-color: #447744; */
+}
+
+/* -----------------------나의 지원서----------------------- */
+
+.my_resume_contents {
+    display: none;
+}
+
+.my_resume_contents.on{
+    display: block;
+    width: 1500px;
+    height: 1100px;
+    margin: 0 auto;
+    /* background-color: #447744; */
+}
+
+/* -----------------------로그인----------------------- */
+
+.login_contents {
+    display: none;
+}
+
+.login_contents.on{
+    display: block;
+    width: 1500px;
+    height: 1100px;
+    margin: 0 auto;
+    /* background-color: #447744; */
 }
 
 footer {
