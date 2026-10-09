@@ -416,6 +416,67 @@ nav>ul>li>a:hover {
     /* background-color: #447744; */
 }
 
+.guide_steps_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.step_box {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step_arrow {
+    margin-top: 25px; 
+    font-size: 20px;
+    color: #121314;
+}
+
+.step_shape {
+    border: 2px solid #121314;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #121314;
+}
+
+.step_shape.rect {
+    width: 150px;
+    height: 70px;
+    border-radius: 15px;
+}
+
+.step_shape.circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.step_desc h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #121314;
+}
+
+.step_desc p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    word-break: keep-all; 
+}
+
 /* -----------------------나의 지원서----------------------- */
 
 .my_resume_contents {
